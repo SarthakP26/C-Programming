@@ -2,12 +2,12 @@
 
 int main()
 {
-    int salary, hra, da, gross, bonus=5000;
+    float basic, hra, da, total;
     printf("Enter Salary:\n");
-    scanf("%d", &salary);
-    hra = salary * 20 / 100;
-    da = salary * 10 / 100;
-    gross = salary + hra + da + bonus;
-    printf("Gross Salary = %d\n", gross);    
+    scanf("%d", &basic);
+    hra = basic * 20 / 100;
+    da = basic * 150 / 100;
+    total = basic + hra + da;
+    printf("Total Salary is: %.2f\n", total);  
     return 0;
 }
